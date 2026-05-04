@@ -21,7 +21,7 @@ st.my_dataframe = session.table("smoothies.public.fruit_options").select(col('FR
 #st.stop()
 
 # Convert the Snopark Dataframe to a Pandas Datafram so we can use the LOC funtion
-pd_df=my_datafram.to_pandas()
+pd_df=my_dataframe.to_pandas()
 st.dataframe(pd_df)
 st.stop()
 
